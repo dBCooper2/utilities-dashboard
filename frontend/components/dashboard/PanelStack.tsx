@@ -8,6 +8,7 @@ interface PanelStackProps {
   theme: 'dark' | 'light';
   onPanelClick: (panelId: string) => void;
   isMobile: boolean;
+  selectedRegion: string;
 }
 
 const PanelStack: FC<PanelStackProps> = ({ 
@@ -15,7 +16,8 @@ const PanelStack: FC<PanelStackProps> = ({
   expandedPanel, 
   theme, 
   onPanelClick,
-  isMobile
+  isMobile,
+  selectedRegion
 }) => {
   // State for tracking which panel is being hovered (desktop only)
   const [hoveredPanel, setHoveredPanel] = useState<string | null>(null);
@@ -49,6 +51,7 @@ const PanelStack: FC<PanelStackProps> = ({
               onMouseLeave={handleMouseLeave}
               theme={theme}
               isMobile={false}
+              selectedRegion={selectedRegion}
             />
           ))}
         </div>
@@ -68,6 +71,7 @@ const PanelStack: FC<PanelStackProps> = ({
           onClick={() => onPanelClick(panel.id)}
           theme={theme}
           isMobile={true}
+          selectedRegion={selectedRegion}
         />
       ))}
     </div>

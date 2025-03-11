@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PanelData } from './panels';
+import FuelMixChart from './FuelMixChart';
 
 interface DashboardCardProps {
   panel: PanelData;
@@ -19,6 +20,7 @@ interface DashboardCardProps {
   onMouseLeave?: () => void;
   theme: 'dark' | 'light';
   isMobile: boolean;
+  selectedRegion: string;
 }
 
 const DashboardCard: FC<DashboardCardProps> = ({ 
@@ -29,7 +31,8 @@ const DashboardCard: FC<DashboardCardProps> = ({
   onMouseEnter,
   onMouseLeave,
   theme,
-  isMobile
+  isMobile,
+  selectedRegion
 }) => {
   // Determine if card should show expanded content
   const shouldShowExpanded = isExpanded || isHoverExpanded;
@@ -68,6 +71,27 @@ const DashboardCard: FC<DashboardCardProps> = ({
     `;
   };
 
+  // Render dashboard component based on panel ID
+  const renderDashboardComponent = () => {
+    switch (panel.id) {
+      case "fuel-mix-chart":
+        return <FuelMixChart region={selectedRegion} theme={theme} isMobile={isMobile} />;
+      default:
+        // Default placeholder for panels without a specific component
+        return (
+          <div className={`rounded-lg border p-4 ${isMobile ? 'h-[300px]' : 'h-[420px]'} flex items-center justify-center ${
+            theme === 'dark' 
+              ? 'border-stone-800 bg-stone-900/50' 
+              : 'border-stone-200 bg-stone-100/50'
+          }`}>
+            <p className={`text-sm ${theme === 'dark' ? 'text-stone-500' : 'text-stone-400'}`}>
+              {`${panel.title} visualization for ${selectedRegion === 'southeast' ? 'entire Southeast' : `state: ${selectedRegion}`}`}
+            </p>
+          </div>
+        );
+    }
+  };
+
   return (
     <Card
       onClick={onClick}
@@ -95,16 +119,8 @@ const DashboardCard: FC<DashboardCardProps> = ({
         </CardHeader>
         
         <CardContent className="flex-grow">
-          {/* Placeholder for actual component */}
-          <div className={`rounded-lg border p-4 ${isMobile ? 'h-[300px]' : 'h-[420px]'} flex items-center justify-center ${
-            theme === 'dark' 
-              ? 'border-stone-800 bg-stone-900/50' 
-              : 'border-stone-200 bg-stone-100/50'
-          }`}>
-            <p className={`text-sm ${theme === 'dark' ? 'text-stone-500' : 'text-stone-400'}`}>
-              Dashboard component will be inserted here
-            </p>
-          </div>
+          {/* Render appropriate component based on panel ID */}
+          {renderDashboardComponent()}
         </CardContent>
         
         <CardFooter className="pt-2 pb-4">

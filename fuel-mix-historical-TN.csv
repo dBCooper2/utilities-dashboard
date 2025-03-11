@@ -1,0 +1,7 @@
+Fuel Type,Generation (MW),Percentage (%),Renewable
+NUC,24560.00,24.40,No
+NG,21230.00,21.00,No
+DUAL,21540.00,21.40,No
+WAT,21320.00,21.10,Yes
+WND,10650.00,10.60,Yes
+OTH,1580.00,1.50,Yes

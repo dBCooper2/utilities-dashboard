@@ -1,0 +1,7 @@
+Fuel Type,Generation (MW),Percentage (%),Renewable
+NUC,9540.00,36.80,No
+NG,8430.00,32.50,No
+COL,3720.00,14.30,No
+WAT,2980.00,11.50,Yes
+SUN,820.00,3.20,Yes
+WND,450.00,1.70,Yes

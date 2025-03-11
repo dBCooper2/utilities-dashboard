@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 import { panels } from "@/components/dashboard/panels";
 import PanelStack from "@/components/dashboard/PanelStack";
+import RegionSelect from "@/components/dashboard/RegionSelect";
 import Link from "next/link";
 
 export default function Dashboard() {
@@ -11,6 +12,7 @@ export default function Dashboard() {
   const [expandedPanel, setExpandedPanel] = useState<string | null>(null); // Start with no panel expanded
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [selectedRegion, setSelectedRegion] = useState<string>("southeast");
 
   // Function to handle panel click - toggles the panel closed if clicked again
   const handlePanelClick = (panelId: string) => {
@@ -22,6 +24,14 @@ export default function Dashboard() {
   // Toggle theme between light and dark
   const toggleTheme = () => {
     setTheme(prevTheme => prevTheme === 'dark' ? 'light' : 'dark');
+  };
+
+  // Handle region selection
+  const handleRegionChange = (region: string) => {
+    setSelectedRegion(region);
+    console.log(`Region changed to: ${region}`);
+    // When region changes, you could close the expanded panel to refresh the view
+    setExpandedPanel(null);
   };
 
   // Check if we're on mobile view
@@ -70,6 +80,10 @@ export default function Dashboard() {
                 <p className={`mt-1 ${theme === 'dark' ? 'text-stone-400' : 'text-stone-500'}`}>
                   Real-time energy market visualization and analysis
                 </p>
+                {/* Region select below subtitle */}
+                <div className="mt-2">
+                  <RegionSelect onRegionChange={handleRegionChange} theme={theme} />
+                </div>
               </div>
               
               {/* Theme toggle button */}
@@ -98,46 +112,53 @@ export default function Dashboard() {
             theme={theme}
             onPanelClick={handlePanelClick}
             isMobile={true}
+            selectedRegion={selectedRegion}
           />
         </div>
       ) : (
         // For desktop: sticky header and separate scrollable content
         <>
           {/* Header for desktop */}
-          <header className="relative px-4 pt-4 pb-2 flex justify-between items-center">
-            <div>
-              <h1 className={`text-2xl font-bold ${theme === 'dark' ? 'text-stone-100' : 'text-stone-900'}`}>
-                Next-Day-Market Dashboard
-              </h1>
-              <p className={`mt-1 ${theme === 'dark' ? 'text-stone-400' : 'text-stone-500'}`}>
-                Real-time energy market visualization and analysis
-              </p>
-            </div>
-            
-            <div className="flex items-center gap-4">
-              <Link 
-                href="/api-testing" 
-                className={`text-sm ${theme === 'dark' ? 'text-stone-400' : 'text-stone-600'} hover:${theme === 'dark' ? 'text-stone-200' : 'text-stone-900'} transition-colors`}
-              >
-                API Testing
-              </Link>
+          <header className="relative px-4 pt-4 pb-2">
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className={`text-2xl font-bold ${theme === 'dark' ? 'text-stone-100' : 'text-stone-900'}`}>
+                  Next-Day-Market Dashboard
+                </h1>
+                <p className={`mt-1 ${theme === 'dark' ? 'text-stone-400' : 'text-stone-500'}`}>
+                  Real-time energy market visualization and analysis
+                </p>
+                {/* Region select below subtitle */}
+                <div className="mt-2">
+                  <RegionSelect onRegionChange={handleRegionChange} theme={theme} />
+                </div>
+              </div>
               
-              {/* Theme toggle button */}
-              <button 
-                onClick={toggleTheme}
-                className={`p-2 rounded-full transition-colors ${
-                  theme === 'dark' 
-                    ? 'bg-stone-800 text-stone-400 hover:bg-stone-700 hover:text-stone-200' 
-                    : 'bg-stone-200 text-stone-700 hover:bg-stone-300 hover:text-stone-900'
-                }`}
-                aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-              >
-                {theme === 'dark' ? (
-                  <SunIcon className="h-5 w-5" />
-                ) : (
-                  <MoonIcon className="h-5 w-5" />
-                )}
-              </button>
+              <div className="flex items-center gap-4">
+                <Link 
+                  href="/api-testing" 
+                  className={`text-sm ${theme === 'dark' ? 'text-stone-400' : 'text-stone-600'} hover:${theme === 'dark' ? 'text-stone-200' : 'text-stone-900'} transition-colors`}
+                >
+                  API Testing
+                </Link>
+                
+                {/* Theme toggle button */}
+                <button 
+                  onClick={toggleTheme}
+                  className={`p-2 rounded-full transition-colors ${
+                    theme === 'dark' 
+                      ? 'bg-stone-800 text-stone-400 hover:bg-stone-700 hover:text-stone-200' 
+                      : 'bg-stone-200 text-stone-700 hover:bg-stone-300 hover:text-stone-900'
+                  }`}
+                  aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+                >
+                  {theme === 'dark' ? (
+                    <SunIcon className="h-5 w-5" />
+                  ) : (
+                    <MoonIcon className="h-5 w-5" />
+                  )}
+                </button>
+              </div>
             </div>
           </header>
 
@@ -149,6 +170,7 @@ export default function Dashboard() {
               theme={theme}
               onPanelClick={handlePanelClick}
               isMobile={false}
+              selectedRegion={selectedRegion}
             />
           </main>
         </>

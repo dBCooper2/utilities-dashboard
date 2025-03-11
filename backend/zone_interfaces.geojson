@@ -1,0 +1,1181 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.08087230518021,
+            35.18783101771078
+          ],
+          [
+            -82.60268756533713,
+            35.60266753041965
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "name": "US-CAR-CPLE-US-CAR-CPLW",
+        "capacity": 1000.0,
+        "from_zone_id": 1,
+        "from_zone_code": "US-CAR-CPLE",
+        "to_zone_id": 2,
+        "to_zone_code": "US-CAR-CPLW",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.60268756533713,
+            35.60266753041965
+          ],
+          [
+            -78.08087230518021,
+            35.18783101771078
+          ]
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "name": "US-CAR-CPLW-US-CAR-CPLE",
+        "capacity": 1000.0,
+        "from_zone_id": 2,
+        "from_zone_code": "US-CAR-CPLW",
+        "to_zone_id": 1,
+        "to_zone_code": "US-CAR-CPLE",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.60268756533713,
+            35.60266753041965
+          ],
+          [
+            -81.8416040180596,
+            35.22209027092273
+          ]
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "name": "US-CAR-CPLW-US-CAR-DUK",
+        "capacity": 1000.0,
+        "from_zone_id": 2,
+        "from_zone_code": "US-CAR-CPLW",
+        "to_zone_id": 3,
+        "to_zone_code": "US-CAR-DUK",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.8416040180596,
+            35.22209027092273
+          ],
+          [
+            -82.60268756533713,
+            35.60266753041965
+          ]
+        ]
+      },
+      "properties": {
+        "id": 4,
+        "name": "US-CAR-DUK-US-CAR-CPLW",
+        "capacity": 1000.0,
+        "from_zone_id": 3,
+        "from_zone_code": "US-CAR-DUK",
+        "to_zone_id": 2,
+        "to_zone_code": "US-CAR-CPLW",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.8416040180596,
+            35.22209027092273
+          ],
+          [
+            -79.98540053733838,
+            34.11880620321452
+          ]
+        ]
+      },
+      "properties": {
+        "id": 5,
+        "name": "US-CAR-DUK-US-CAR-SC",
+        "capacity": 1000.0,
+        "from_zone_id": 3,
+        "from_zone_code": "US-CAR-DUK",
+        "to_zone_id": 4,
+        "to_zone_code": "US-CAR-SC",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.98540053733838,
+            34.11880620321452
+          ],
+          [
+            -81.8416040180596,
+            35.22209027092273
+          ]
+        ]
+      },
+      "properties": {
+        "id": 6,
+        "name": "US-CAR-SC-US-CAR-DUK",
+        "capacity": 1000.0,
+        "from_zone_id": 4,
+        "from_zone_code": "US-CAR-SC",
+        "to_zone_id": 3,
+        "to_zone_code": "US-CAR-DUK",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.98540053733838,
+            34.11880620321452
+          ],
+          [
+            -81.05263456687501,
+            33.51419778534315
+          ]
+        ]
+      },
+      "properties": {
+        "id": 7,
+        "name": "US-CAR-SC-US-CAR-SCEG",
+        "capacity": 1000.0,
+        "from_zone_id": 4,
+        "from_zone_code": "US-CAR-SC",
+        "to_zone_id": 5,
+        "to_zone_code": "US-CAR-SCEG",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.05263456687501,
+            33.51419778534315
+          ],
+          [
+            -79.98540053733838,
+            34.11880620321452
+          ]
+        ]
+      },
+      "properties": {
+        "id": 8,
+        "name": "US-CAR-SCEG-US-CAR-SC",
+        "capacity": 1000.0,
+        "from_zone_id": 5,
+        "from_zone_code": "US-CAR-SCEG",
+        "to_zone_id": 4,
+        "to_zone_code": "US-CAR-SC",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.05263456687501,
+            33.51419778534315
+          ],
+          [
+            -85.2748111498271,
+            32.1871756985067
+          ]
+        ]
+      },
+      "properties": {
+        "id": 9,
+        "name": "US-CAR-SCEG-US-SE-SOCO",
+        "capacity": 1000.0,
+        "from_zone_id": 5,
+        "from_zone_code": "US-CAR-SCEG",
+        "to_zone_id": 18,
+        "to_zone_code": "US-SE-SOCO",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -85.2748111498271,
+            32.1871756985067
+          ],
+          [
+            -81.05263456687501,
+            33.51419778534315
+          ]
+        ]
+      },
+      "properties": {
+        "id": 10,
+        "name": "US-SE-SOCO-US-CAR-SCEG",
+        "capacity": 1000.0,
+        "from_zone_id": 18,
+        "from_zone_code": "US-SE-SOCO",
+        "to_zone_id": 5,
+        "to_zone_code": "US-CAR-SCEG",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -85.2748111498271,
+            32.1871756985067
+          ],
+          [
+            -86.75481035722083,
+            35.182250533655136
+          ]
+        ]
+      },
+      "properties": {
+        "id": 11,
+        "name": "US-SE-SOCO-US-TEN-TVA",
+        "capacity": 1000.0,
+        "from_zone_id": 18,
+        "from_zone_code": "US-SE-SOCO",
+        "to_zone_id": 19,
+        "to_zone_code": "US-TEN-TVA",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.75481035722083,
+            35.182250533655136
+          ],
+          [
+            -85.2748111498271,
+            32.1871756985067
+          ]
+        ]
+      },
+      "properties": {
+        "id": 12,
+        "name": "US-TEN-TVA-US-SE-SOCO",
+        "capacity": 1000.0,
+        "from_zone_id": 19,
+        "from_zone_code": "US-TEN-TVA",
+        "to_zone_id": 18,
+        "to_zone_code": "US-SE-SOCO",
+        "from_iso": "SERC",
+        "to_iso": "SERC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -90.51904804762329,
+            36.09557334617144
+          ],
+          [
+            -98.55541254706526,
+            39.70720894671635
+          ]
+        ]
+      },
+      "properties": {
+        "id": 13,
+        "name": "US-CENT-SPA-US-CENT-SWPP",
+        "capacity": 1000.0,
+        "from_zone_id": 6,
+        "from_zone_code": "US-CENT-SPA",
+        "to_zone_id": 7,
+        "to_zone_code": "US-CENT-SWPP",
+        "from_iso": "SPP",
+        "to_iso": "SPP",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.55541254706526,
+            39.70720894671635
+          ],
+          [
+            -90.51904804762329,
+            36.09557334617144
+          ]
+        ]
+      },
+      "properties": {
+        "id": 14,
+        "name": "US-CENT-SWPP-US-CENT-SPA",
+        "capacity": 1000.0,
+        "from_zone_id": 7,
+        "from_zone_code": "US-CENT-SWPP",
+        "to_zone_id": 6,
+        "to_zone_code": "US-CENT-SPA",
+        "from_iso": "SPP",
+        "to_iso": "SPP",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.30288700502233,
+            28.13453928754101
+          ],
+          [
+            -82.50758040162319,
+            28.747347723852705
+          ]
+        ]
+      },
+      "properties": {
+        "id": 15,
+        "name": "US-FLA-FMPP-US-FLA-FPC",
+        "capacity": 1000.0,
+        "from_zone_id": 8,
+        "from_zone_code": "US-FLA-FMPP",
+        "to_zone_id": 9,
+        "to_zone_code": "US-FLA-FPC",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.50758040162319,
+            28.747347723852705
+          ],
+          [
+            -81.30288700502233,
+            28.13453928754101
+          ]
+        ]
+      },
+      "properties": {
+        "id": 16,
+        "name": "US-FLA-FPC-US-FLA-FMPP",
+        "capacity": 1000.0,
+        "from_zone_id": 9,
+        "from_zone_code": "US-FLA-FPC",
+        "to_zone_id": 8,
+        "to_zone_code": "US-FLA-FMPP",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.50758040162319,
+            28.747347723852705
+          ],
+          [
+            -82.32873237823281,
+            29.619310205820874
+          ]
+        ]
+      },
+      "properties": {
+        "id": 17,
+        "name": "US-FLA-FPC-US-FLA-GVL",
+        "capacity": 1000.0,
+        "from_zone_id": 9,
+        "from_zone_code": "US-FLA-FPC",
+        "to_zone_id": 10,
+        "to_zone_code": "US-FLA-GVL",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.32873237823281,
+            29.619310205820874
+          ],
+          [
+            -82.50758040162319,
+            28.747347723852705
+          ]
+        ]
+      },
+      "properties": {
+        "id": 18,
+        "name": "US-FLA-GVL-US-FLA-FPC",
+        "capacity": 1000.0,
+        "from_zone_id": 10,
+        "from_zone_code": "US-FLA-GVL",
+        "to_zone_id": 9,
+        "to_zone_code": "US-FLA-FPC",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.32873237823281,
+            29.619310205820874
+          ],
+          [
+            -80.5880915952016,
+            25.45690356595922
+          ]
+        ]
+      },
+      "properties": {
+        "id": 19,
+        "name": "US-FLA-GVL-US-FLA-HST",
+        "capacity": 1000.0,
+        "from_zone_id": 10,
+        "from_zone_code": "US-FLA-GVL",
+        "to_zone_id": 11,
+        "to_zone_code": "US-FLA-HST",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.5880915952016,
+            25.45690356595922
+          ],
+          [
+            -82.32873237823281,
+            29.619310205820874
+          ]
+        ]
+      },
+      "properties": {
+        "id": 20,
+        "name": "US-FLA-HST-US-FLA-GVL",
+        "capacity": 1000.0,
+        "from_zone_id": 11,
+        "from_zone_code": "US-FLA-HST",
+        "to_zone_id": 10,
+        "to_zone_code": "US-FLA-GVL",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.5880915952016,
+            25.45690356595922
+          ],
+          [
+            -83.6197712919849,
+            30.38946299948911
+          ]
+        ]
+      },
+      "properties": {
+        "id": 21,
+        "name": "US-FLA-HST-US-FLA-JEA",
+        "capacity": 1000.0,
+        "from_zone_id": 11,
+        "from_zone_code": "US-FLA-HST",
+        "to_zone_id": 12,
+        "to_zone_code": "US-FLA-JEA",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.6197712919849,
+            30.38946299948911
+          ],
+          [
+            -80.5880915952016,
+            25.45690356595922
+          ]
+        ]
+      },
+      "properties": {
+        "id": 22,
+        "name": "US-FLA-JEA-US-FLA-HST",
+        "capacity": 1000.0,
+        "from_zone_id": 12,
+        "from_zone_code": "US-FLA-JEA",
+        "to_zone_id": 11,
+        "to_zone_code": "US-FLA-HST",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.6197712919849,
+            30.38946299948911
+          ],
+          [
+            -82.45957569636624,
+            28.9434967800379
+          ]
+        ]
+      },
+      "properties": {
+        "id": 23,
+        "name": "US-FLA-JEA-US-FLA-SEC",
+        "capacity": 1000.0,
+        "from_zone_id": 12,
+        "from_zone_code": "US-FLA-JEA",
+        "to_zone_id": 13,
+        "to_zone_code": "US-FLA-SEC",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.45957569636624,
+            28.9434967800379
+          ],
+          [
+            -83.6197712919849,
+            30.38946299948911
+          ]
+        ]
+      },
+      "properties": {
+        "id": 24,
+        "name": "US-FLA-SEC-US-FLA-JEA",
+        "capacity": 1000.0,
+        "from_zone_id": 13,
+        "from_zone_code": "US-FLA-SEC",
+        "to_zone_id": 12,
+        "to_zone_code": "US-FLA-JEA",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.45957569636624,
+            28.9434967800379
+          ],
+          [
+            -84.24804248042474,
+            30.43717404485656
+          ]
+        ]
+      },
+      "properties": {
+        "id": 25,
+        "name": "US-FLA-SEC-US-FLA-TAL",
+        "capacity": 1000.0,
+        "from_zone_id": 13,
+        "from_zone_code": "US-FLA-SEC",
+        "to_zone_id": 14,
+        "to_zone_code": "US-FLA-TAL",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24804248042474,
+            30.43717404485656
+          ],
+          [
+            -82.45957569636624,
+            28.9434967800379
+          ]
+        ]
+      },
+      "properties": {
+        "id": 26,
+        "name": "US-FLA-TAL-US-FLA-SEC",
+        "capacity": 1000.0,
+        "from_zone_id": 14,
+        "from_zone_code": "US-FLA-TAL",
+        "to_zone_id": 13,
+        "to_zone_code": "US-FLA-SEC",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -84.24804248042474,
+            30.43717404485656
+          ],
+          [
+            -82.19191597572834,
+            27.935810292320227
+          ]
+        ]
+      },
+      "properties": {
+        "id": 27,
+        "name": "US-FLA-TAL-US-FLA-TEC",
+        "capacity": 1000.0,
+        "from_zone_id": 14,
+        "from_zone_code": "US-FLA-TAL",
+        "to_zone_id": 15,
+        "to_zone_code": "US-FLA-TEC",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.19191597572834,
+            27.935810292320227
+          ],
+          [
+            -84.24804248042474,
+            30.43717404485656
+          ]
+        ]
+      },
+      "properties": {
+        "id": 28,
+        "name": "US-FLA-TEC-US-FLA-TAL",
+        "capacity": 1000.0,
+        "from_zone_id": 15,
+        "from_zone_code": "US-FLA-TEC",
+        "to_zone_id": 14,
+        "to_zone_code": "US-FLA-TAL",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.19191597572834,
+            27.935810292320227
+          ],
+          [
+            -81.39981339557927,
+            27.59963361157487
+          ]
+        ]
+      },
+      "properties": {
+        "id": 29,
+        "name": "US-FLA-TEC-US-FLA-FPL",
+        "capacity": 1000.0,
+        "from_zone_id": 15,
+        "from_zone_code": "US-FLA-TEC",
+        "to_zone_id": 17,
+        "to_zone_code": "US-FLA-FPL",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.39981339557927,
+            27.59963361157487
+          ],
+          [
+            -82.19191597572834,
+            27.935810292320227
+          ]
+        ]
+      },
+      "properties": {
+        "id": 30,
+        "name": "US-FLA-FPL-US-FLA-TEC",
+        "capacity": 1000.0,
+        "from_zone_id": 17,
+        "from_zone_code": "US-FLA-FPL",
+        "to_zone_id": 15,
+        "to_zone_code": "US-FLA-TEC",
+        "from_iso": "FRCC",
+        "to_iso": "FRCC",
+        "is_inter_iso": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.08087230518021,
+            35.18783101771078
+          ],
+          [
+            -85.33727940752864,
+            37.6098134138099
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31,
+        "name": "SERC-MISO",
+        "capacity": 2000.0,
+        "from_zone_id": 1,
+        "from_zone_code": "US-CAR-CPLE",
+        "to_zone_id": 16,
+        "to_zone_code": "US-MIDW-LGEE",
+        "from_iso": "SERC",
+        "to_iso": "MISO",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.08087230518021,
+            35.18783101771078
+          ],
+          [
+            -90.51904804762329,
+            36.09557334617144
+          ]
+        ]
+      },
+      "properties": {
+        "id": 32,
+        "name": "SERC-SPP",
+        "capacity": 2000.0,
+        "from_zone_id": 1,
+        "from_zone_code": "US-CAR-CPLE",
+        "to_zone_id": 6,
+        "to_zone_code": "US-CENT-SPA",
+        "from_iso": "SERC",
+        "to_iso": "SPP",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.08087230518021,
+            35.18783101771078
+          ],
+          [
+            -81.30288700502233,
+            28.13453928754101
+          ]
+        ]
+      },
+      "properties": {
+        "id": 33,
+        "name": "SERC-FRCC",
+        "capacity": 2000.0,
+        "from_zone_id": 1,
+        "from_zone_code": "US-CAR-CPLE",
+        "to_zone_id": 8,
+        "to_zone_code": "US-FLA-FMPP",
+        "from_iso": "SERC",
+        "to_iso": "FRCC",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -85.33727940752864,
+            37.6098134138099
+          ],
+          [
+            -78.08087230518021,
+            35.18783101771078
+          ]
+        ]
+      },
+      "properties": {
+        "id": 34,
+        "name": "MISO-SERC",
+        "capacity": 2000.0,
+        "from_zone_id": 16,
+        "from_zone_code": "US-MIDW-LGEE",
+        "to_zone_id": 1,
+        "to_zone_code": "US-CAR-CPLE",
+        "from_iso": "MISO",
+        "to_iso": "SERC",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -85.33727940752864,
+            37.6098134138099
+          ],
+          [
+            -90.51904804762329,
+            36.09557334617144
+          ]
+        ]
+      },
+      "properties": {
+        "id": 35,
+        "name": "MISO-SPP",
+        "capacity": 2000.0,
+        "from_zone_id": 16,
+        "from_zone_code": "US-MIDW-LGEE",
+        "to_zone_id": 6,
+        "to_zone_code": "US-CENT-SPA",
+        "from_iso": "MISO",
+        "to_iso": "SPP",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -85.33727940752864,
+            37.6098134138099
+          ],
+          [
+            -81.30288700502233,
+            28.13453928754101
+          ]
+        ]
+      },
+      "properties": {
+        "id": 36,
+        "name": "MISO-FRCC",
+        "capacity": 2000.0,
+        "from_zone_id": 16,
+        "from_zone_code": "US-MIDW-LGEE",
+        "to_zone_id": 8,
+        "to_zone_code": "US-FLA-FMPP",
+        "from_iso": "MISO",
+        "to_iso": "FRCC",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -90.51904804762329,
+            36.09557334617144
+          ],
+          [
+            -78.08087230518021,
+            35.18783101771078
+          ]
+        ]
+      },
+      "properties": {
+        "id": 37,
+        "name": "SPP-SERC",
+        "capacity": 2000.0,
+        "from_zone_id": 6,
+        "from_zone_code": "US-CENT-SPA",
+        "to_zone_id": 1,
+        "to_zone_code": "US-CAR-CPLE",
+        "from_iso": "SPP",
+        "to_iso": "SERC",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -90.51904804762329,
+            36.09557334617144
+          ],
+          [
+            -85.33727940752864,
+            37.6098134138099
+          ]
+        ]
+      },
+      "properties": {
+        "id": 38,
+        "name": "SPP-MISO",
+        "capacity": 2000.0,
+        "from_zone_id": 6,
+        "from_zone_code": "US-CENT-SPA",
+        "to_zone_id": 16,
+        "to_zone_code": "US-MIDW-LGEE",
+        "from_iso": "SPP",
+        "to_iso": "MISO",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -90.51904804762329,
+            36.09557334617144
+          ],
+          [
+            -81.30288700502233,
+            28.13453928754101
+          ]
+        ]
+      },
+      "properties": {
+        "id": 39,
+        "name": "SPP-FRCC",
+        "capacity": 2000.0,
+        "from_zone_id": 6,
+        "from_zone_code": "US-CENT-SPA",
+        "to_zone_id": 8,
+        "to_zone_code": "US-FLA-FMPP",
+        "from_iso": "SPP",
+        "to_iso": "FRCC",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.30288700502233,
+            28.13453928754101
+          ],
+          [
+            -78.08087230518021,
+            35.18783101771078
+          ]
+        ]
+      },
+      "properties": {
+        "id": 40,
+        "name": "FRCC-SERC",
+        "capacity": 2000.0,
+        "from_zone_id": 8,
+        "from_zone_code": "US-FLA-FMPP",
+        "to_zone_id": 1,
+        "to_zone_code": "US-CAR-CPLE",
+        "from_iso": "FRCC",
+        "to_iso": "SERC",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.30288700502233,
+            28.13453928754101
+          ],
+          [
+            -85.33727940752864,
+            37.6098134138099
+          ]
+        ]
+      },
+      "properties": {
+        "id": 41,
+        "name": "FRCC-MISO",
+        "capacity": 2000.0,
+        "from_zone_id": 8,
+        "from_zone_code": "US-FLA-FMPP",
+        "to_zone_id": 16,
+        "to_zone_code": "US-MIDW-LGEE",
+        "from_iso": "FRCC",
+        "to_iso": "MISO",
+        "is_inter_iso": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.30288700502233,
+            28.13453928754101
+          ],
+          [
+            -90.51904804762329,
+            36.09557334617144
+          ]
+        ]
+      },
+      "properties": {
+        "id": 42,
+        "name": "FRCC-SPP",
+        "capacity": 2000.0,
+        "from_zone_id": 8,
+        "from_zone_code": "US-FLA-FMPP",
+        "to_zone_id": 6,
+        "to_zone_code": "US-CENT-SPA",
+        "from_iso": "FRCC",
+        "to_iso": "SPP",
+        "is_inter_iso": true
+      }
+    }
+  ]
+}

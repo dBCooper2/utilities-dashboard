@@ -1,20 +1,14 @@
-version: '3.8'
-
 services:
-  postgres:
-    image: postgres:14
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    env_file:
-      - .env
+  timescaledb:
+    image: timescale/timescaledb:latest-pg14
     environment:
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-      - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=energy_dashboard
     ports:
       - "5432:5432"
-    networks:
-      - app-network
+    volumes:
+      - timescaledb_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
@@ -22,43 +16,26 @@ services:
       retries: 5
 
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-    volumes:
-      - ./backend:/app
-    env_file:
-      - .env
+    build: ./backend
+    environment:
+      - DB_HOST=timescaledb
+      - DB_PORT=5432
+      - DB_NAME=energy_dashboard
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - TIMESCALE_ENABLED=True
+      - CHUNK_TIME_INTERVAL=1 day
+      - EIA_API_KEY=${EIA_API_KEY}
+      - PYTHONUNBUFFERED=1
     ports:
       - "8000:8000"
     depends_on:
-      postgres:
+      timescaledb:
         condition: service_healthy
-    networks:
-      - app-network
-
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
     volumes:
-      - ./frontend:/app
-      - /app/node_modules
-      - /app/.next
-    ports:
-      - "3000:3000"
-    env_file:
-      - .env
-    environment:
-      - NEXT_PUBLIC_API_URL=http://localhost:8000
-    depends_on:
-      - backend
-    networks:
-      - app-network
-
-networks:
-  app-network:
+      - ./backend:/app
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    restart: unless-stopped
 
 volumes:
-  postgres_data: 
+  timescaledb_data: 
